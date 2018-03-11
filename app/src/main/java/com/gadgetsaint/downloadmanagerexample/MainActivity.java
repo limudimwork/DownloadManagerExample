@@ -22,6 +22,8 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
+
+//IF DEVICE ANDROID VERSION IS 6.0 OR ABOVE YOU WILL NEED TO ASK RUN TIME PERMISSION OF USING DEVICE STORAGR
 public class MainActivity extends AppCompatActivity {
 
     private DownloadManager downloadManager;
@@ -41,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
                 new IntentFilter(DownloadManager.ACTION_DOWNLOAD_COMPLETE));
 
 
-        Download_Uri = Uri.parse("http://www.gadgetsaint.com/wp-content/uploads/2016/11/cropped-web_hi_res_512.png");
+        Download_Uri = Uri.parse("https://cdn.mos.cms.futurecdn.net/8fd2c275eb8bce82bac709da24304625-650-80.jpg");
 
         TextView  btnSingle = (TextView) findViewById(R.id.single);
 
